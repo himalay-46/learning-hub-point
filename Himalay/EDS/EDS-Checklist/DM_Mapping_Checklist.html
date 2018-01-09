@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NISC Export Services Pvt. Ltd.</title>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$( "#checkbox1" ).one( "click", function() {
+  var index = $( "#checkbox1" ).index( this );
+  $( this ).checked;
+  });
+
+
+});
+</script>
+<style>
+body
+{
+font-size:18px;
+margin:30px 20px;
+
+}
+.h2
+{
+color:#8B0000;
+font-weight:bold;
+font-size:22px;
+text-align:left;
+}
+.checkbox
+{
+width:18px;
+height:18px;
+}
+.print
+{
+text-align:center;
+margin-top:50px;
+}
+div input
+{
+color:red;
+background:#FFDD00;
+width:80px;
+height:40px;
+font-size:20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<h1
+style="color:#8B0000;font-weight:bold;font-size:30px;text-align:center">EBSCO
+Discovery Services(EDS)</h1>
+<h2 class="h2">Mapping CHECKLIST:</h2>
+<form action="####">
+<table>
+	<tr>
+		<td>Person Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>DataSet Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>Date:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+</table>
+  <table border="0">
+<tr>
+<td valign="top">1.</td>
+<td valign="top">Check whether the Product Code has updated as “---” or “edsxxx” for all the fields.</td>
+<td valign="top"><input class="checkbox" id="checkbox1" type="checkbox" name="CheckPoint" value="CheckPoint1"/></td>
+</tr>
+<tr>
+<td valign="top">2.</td>
+<td valign="top">For static/create fields, please make sure the correct values has been captured or not (for ex: 10041=Y/N, )</td>
+<td valign="top"><input class="checkbox" id="checkbox2" type="checkbox" name="CheckPoint" value="CheckPoint2"/></td>
+</tr>
+<tr>
+<td valign="top">3.</td>
+<td valign="top">If DB is stand alone, then please make sure the values captured for SourceCat_18138 field should match with Spec.</td>
+<td valign="top"><input class="checkbox" id="checkbox3" type="checkbox" name="CheckPoint" value="CheckPoint3"/></td>
+</tr>
+<tr>
+<td valign="top">4.</td>
+<td valign="top">If Delete field is present then please check the path selected and the regex value captured was correct or not.</td>
+<td valign="top"><input class="checkbox" id="checkbox4" type="checkbox" name="CheckPoint" value="CheckPoint4"/></td>
+</tr>
+<tr>
+<td valign="top">5.</td>
+<td valign="top">If Collection values are present then please check all the values are loaded in SLS or not (Note: Please check the values which has special characters and also save the lookup file in UTF-8 format only).</td>
+<td valign="top"><input class="checkbox" id="checkbox5" type="checkbox" name="CheckPoint" value="CheckPoint5"/></td>
+</tr>
+<tr>
+<td valign="top">6.</td>
+<td valign="top">May Repeat/Does not repeat: Based on the field metadata report file, please cross check whether the conditions were captured correctly or not?</td>
+<td valign="top"><input class="checkbox" id="checkbox6" type="checkbox" name="CheckPoint" value="CheckPoint6"/></td>
+</tr>
+<tr>
+<td valign="top">7.</td>
+<td valign="top">AN_13: Please cross check for the database code and replace the non-alpha numeric values with periods.</td>
+<td valign="top"><input class="checkbox" id="checkbox7" type="checkbox" name="CheckPoint" value="CheckPoint7"/></td>
+</tr>
+<tr>
+<td valign="top">8.</td>
+<td valign="top">Trim transforms: For large strings, do not use Trim Start instead use Replace Regex to replace strings.</td>
+<td valign="top"><input class="checkbox" id="checkbox8" type="checkbox" name="CheckPoint" value="CheckPoint8"/></td>
+</tr>
+<tr>
+<td valign="top">9.</td>
+<td valign="top">Date Fields: Make sure to keep ‘Match Current Year or Date’ transform.</td>
+<td valign="top"><input class="checkbox" id="checkbox9" type="checkbox" name="CheckPoint" value="CheckPoint9"/></td>
+</tr>
+<tr>
+<td valign="top">10.</td>
+<td valign="top">DOI_11076: Please cross check the EPDB code (i.e., 11076) for DOI field as there may be a chance of typo like 11706.</td>
+<td valign="top"><input class="checkbox" id="checkbox10" type="checkbox" name="CheckPoint" value="CheckPoint10"/></td>
+</tr>
+<tr>
+<td valign="top">11.</td>
+<td valign="top">FullText39: If FT is available then please cross check whether it was loaded correctly or not by using ShowScript option.</td>
+<td valign="top"><input class="checkbox" id="checkbox11" type="checkbox" name="CheckPoint" value="CheckPoint11"/></td>
+</tr>
+<tr>
+<td valign="top">12.</td>
+<td valign="top">Language_546: Make sure to use ‘SubfieldGroup’ transform instead of loading separately. Also, capture subfield_l instead of ‘i’.</td>
+<td valign="top"><input class="checkbox" id="checkbox12" type="checkbox" name="CheckPoint" value="CheckPoint12"/></td>
+</tr>
+<tr>
+<td valign="top">13.</td>
+<td valign="top">By using ‘ShowScript’ option, please cross check all the fields for two or three records. So that we can ensure that all the mapped fields are loaded or not.</td>
+<td valign="top"><input class="checkbox" id="checkbox13" type="checkbox" name="CheckPoint" value="CheckPoint13"/></td>
+</tr>
+<tr>
+<td valign="top">14.</td>
+<td valign="top">Make sure all the fields should be in ‘Complete’ status before releasing the script.</td>
+<td valign="top"><input class="checkbox" id="checkbox14" type="checkbox" name="CheckPoint" value="CheckPoint14"/></td>
+</tr>
+<tr>
+<td valign="top">15.</td>
+<td valign="top">Please make sure to apply “Remove duplicates transform” where it is applicable.</td>
+<td valign="top"><input class="checkbox" id="checkbox15" type="checkbox" name="CheckPoint" value="CheckPoint15"/></td>
+</tr>
+</table>
+  <div class="print"><input width="500px" height="500px" type="submit" value="Print" onClick="window.print()"/></div>
+  <a href="javascript:location.reload(true)"><input width="500px" height="500px" type="button" value="Refresh"/></a>
+</form>
+</body>
+</html>

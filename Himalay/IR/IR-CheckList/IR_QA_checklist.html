@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NISC Export Services Pvt. Ltd.</title>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$( "#checkbox1" ).one( "click", function() {
+  var index = $( "#checkbox1" ).index( this );
+  $( this ).checked;
+  });
+
+
+});
+</script>
+<style>
+body
+{
+font-size:18px;
+margin:30px 20px;
+
+}
+.h2
+{
+color:#8B0000;
+font-weight:bold;
+font-size:22px;
+text-align:left;
+}
+.checkbox
+{
+width:18px;
+height:18px;
+}
+.print
+{
+text-align:center;
+margin-top:50px;
+}
+div input
+{
+color:red;
+background:#FFDD00;
+width:80px;
+height:40px;
+font-size:20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<h1 style="color:#8B0000;font-weight:bold;font-size:30px;text-align:center">Institutional Repository(IR)</h1>
+<h2 class="h2">SPEC QA CHECKLIST:</h2>
+<form action="####">
+<table>
+	<tr>
+		<td>Spec Done By:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>IR DataSet Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>QA Done By:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>Date:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+</table>
+  <table border="0">
+<tr>
+<td valign="top">1.</td>
+<td valign="top">Check and ensure that the Dataset Output filename is correct (i.e. format should be &#x201C;dbcode_spec.doc&#x201D; ex: ir00811a_spec.doc)</td>
+<td valign="top"><input class="checkbox" id="checkbox1" type="checkbox" name="CheckPoint" value="CheckPoint1"/></td>
+</tr>
+<tr>
+<td valign="top">2.</td>
+<td valign="top">Check and ensure that all the instructions in &#x201C;Questionnaire&#x201D; was filled correctly (e.g. Full Text Availability, Open Access Availability, etc.)</td>
+<td valign="top"><input class="checkbox" id="checkbox2" type="checkbox" name="CheckPoint" value="CheckPoint2"/></td>
+</tr>
+<tr>
+<td valign="top">3.</td>
+<td valign="top">Check and ensure that the latest version of IR template is used for writing Spec.</td>
+<td valign="top"><input class="checkbox" id="checkbox3" type="checkbox" name="CheckPoint" value="CheckPoint3"/></td>
+</tr>
+<tr>
+<td valign="top">4.</td>
+<td valign="top">Check and ensure that the header information is filled correctly i.e., {Database Name, long form} ({product code}), DataSource Name, DataSource ID, Version, DataSet Name and compare with Questionnaire.</td>
+<td valign="top"><input class="checkbox" id="checkbox4" type="checkbox" name="CheckPoint" value="CheckPoint4"/></td>
+</tr>
+<tr>
+<td valign="top">5.</td>
+<td valign="top">Check and ensure that &#x201C;Document History&#x201D; is updated correctly in the Spec (i.e. Person name, Date of change, Description of Change, Lookups (Optional) and Loader informations captured correctly)</td>
+<td valign="top"><input class="checkbox" id="checkbox5" type="checkbox" name="CheckPoint" value="CheckPoint5"/></td>
+</tr>
+<tr>
+<td valign="top">6.</td>
+<td valign="top">Check and ensure that the font style and font size of the Spec (Font Size should be &#x201C;8&#x201D; and capture Font style as &#x201C;Arial&#x201D; for all the columns except third column i.e., particularly for the examples, use Font style as &#x201C;Courier New&#x201D; after Ex:/AN)</td>
+<td valign="top"><input class="checkbox" id="checkbox6" type="checkbox" name="CheckPoint" value="CheckPoint6"/></td>
+</tr>
+<tr>
+<td valign="top">7.</td>
+<td valign="top">Check and ensure whether the Spec updated with the XPaths under &#x201C;IP Field ID&#x201D; Column “Hierarchy” tags.</td>
+<td valign="top"><input class="checkbox" id="checkbox7" type="checkbox" name="CheckPoint" value="CheckPoint7"/></td>
+</tr>
+<tr>
+<td valign="top">8.</td>
+<td valign="top">Check and ensure that the Mandatory fields in Spec captured correctly (for Example fields like: 13, 11013, 10041 etc.)</td>
+<td valign="top"><input class="checkbox" id="checkbox8" type="checkbox" name="CheckPoint" value="CheckPoint8"/></td>
+</tr>
+<tr>
+<td valign="top">9.</td>
+<td valign="top">Check and ensure whether the &#x201C;FlagRepository_15042&#x201D; is captured &#x201C;Y&#x201D;.</td>
+<td valign="top"><input class="checkbox" id="checkbox9" type="checkbox" name="CheckPoint" value="CheckPoint9"/></td>
+</tr>
+<tr>
+<td valign="top">10.</td>
+<td valign="top">Check and ensure that all the &#x201C;Instructions&#x201D; written in SPEC along with the examples listed. Ensure that the instructions match with the examples provided.</td>
+<td valign="top"><input class="checkbox" id="checkbox10" type="checkbox" name="CheckPoint" value="CheckPoint10"/></td>
+</tr>
+<tr>
+<td valign="top">11.</td>
+<td valign="top">Don&#x2019;t change the fields (i.e., &#x201C;19991&#x201D; 20001, 20011, 20021, 20031 &#x2026; 20041) and also don&#x2019;t grey them.</td>
+<td valign="top"><input class="checkbox" id="checkbox11" type="checkbox" name="CheckPoint" value="CheckPoint11"/></td>
+</tr>
+<tr>
+<td valign="top">12.</td>
+<td valign="top">Check and ensure that the attachments if any should be added for Collection Names and Publication types.</td>
+<td valign="top"><input class="checkbox" id="checkbox12" type="checkbox" name="CheckPoint" value="CheckPoint12"/></td>
+</tr>
+<tr>
+<td valign="top">13.</td>
+<td valign="top">Check and ensure that the Table of contents of the Spec and the page numbers are matched correctly and also ensure that all the fields are covered.</td>
+<td valign="top"><input class="checkbox" id="checkbox13" type="checkbox" name="CheckPoint" value="CheckPoint13"/></td>
+</tr>
+<tr>
+<td valign="top">14.</td>
+<td valign="top">Deliverable files:
+<table border="0">
+<tr>
+<td valign="top">a.</td>
+<td valign="top">dbcode_spec.doc (e.g. ir00811a_spec.doc)</td>
+<td valign="top"><input class="checkbox" id="checkbox14a" type="checkbox" name="CheckPoint" value="CheckPoint14a"/></td>
+</tr>
+<tr>
+<td valign="top">b.</td>
+<td valign="top">Lookup files [Collection Names (Optional), Publication Types (Optional)]</td>
+<td valign="top"><input class="checkbox" id="checkbox14b" type="checkbox" name="CheckPoint" value="CheckPoint14b"/></td>
+</tr>
+<tr>
+<td valign="top">c.</td>
+<td valign="top">Questionnaire.doc</td>
+<td valign="top"><input class="checkbox" id="checkbox14c" type="checkbox" name="CheckPoint" value="CheckPoint14c"/></td>
+</tr>
+</table>
+</td>
+<td valign="top"><input class="checkbox" id="checkbox14" type="checkbox" name="CheckPoint" value="CheckPoint14"/></td>
+</tr>
+<tr>
+<td valign="top">15.</td>
+<td valign="top">Ensure that the feedback corrected and delivered in the correct path (i.e., http://ddd.svn.epnet.com/design/CustIR/ProductSpecific/).</td>
+<td valign="top"><input class="checkbox" id="checkbox15" type="checkbox" name="CheckPoint" value="CheckPoint15"/></td>
+</tr>
+</table>
+  <div class="print"><input width="500px" height="500px" type="submit" value="Print" onClick="window.print()"/></div>
+  <a href="javascript:location.reload(true)"><input width="500px" height="500px" type="button" value="Refresh"/></a>
+</form>
+</body>
+</html>

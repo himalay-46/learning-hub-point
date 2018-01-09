@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NISC Export Services Pvt. Ltd.</title>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$( "#checkbox1" ).one( "click", function() {
+  var index = $( "#checkbox1" ).index( this );
+  $( this ).checked;
+  });
+
+
+});
+</script>
+<style>
+body
+{
+font-size:18px;
+margin:30px 20px;
+
+}
+.h2
+{
+color:#8B0000;
+font-weight:bold;
+font-size:22px;
+text-align:left;
+}
+.checkbox
+{
+width:18px;
+height:18px;
+}
+.print
+{
+text-align:center;
+margin-top:50px;
+}
+div input
+{
+color:red;
+background:#FFDD00;
+width:80px;
+height:40px;
+font-size:20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<h1
+style="color:#8B0000;font-weight:bold;font-size:30px;text-align:center">Institutional Repository(IR)s</h1>
+<h2 class="h2">SPEC CHECKLIST:</h2>
+<form action="####">
+<table>
+	<tr>
+		<td>Person Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>IR DataSet Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>Date:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+</table>
+  <table border="0">
+    <tr>
+		<td valign="top">1.</td>
+		<td valign="top">Ensure that all the prerequisites
+		files received for Data Mapping Task(IR) (i.e., Raw Data, Report files, Questionnaire, Publication type lookup(optional) and Collection lookup(optional) Files).</td>
+		<td valign="top"><input class="checkbox" id="checkbox1" type="checkbox" name="CheckPoint" value="CheckPoint1"/></td>
+	</tr>
+	<tr>
+		<td valign="top">2.</td>
+		<td valign="top">Check the format of Exemplar files received as <b>XML</b> files.</td>
+		<td valign="top"><input class="checkbox" id="checkbox2" type="checkbox" name="CheckPoint" value="CheckPoint2"/></td>
+	</tr>
+	<tr>
+		<td valign="top">3.</td>
+		<td valign="top">Check the Schema of received XML files where it Dublin core ot not?</td>
+		<td valign="top"><input class="checkbox" id="checkbox3" type="checkbox" name="CheckPoint"value="CheckPoint3"/></td>
+	</tr>
+	<tr>
+		<td valign="top">4.</td>
+		<td valign="top">Check Questionnaire for dataset related information (Dataset Name, Institution Name, Full Text Availability, URL, Coverage and etc.).</td>
+		<td valign="top"><input class="checkbox" id="checkbox4" type="checkbox" name="CheckPoint"value="CheckPoint4"/></td>
+	</tr>
+	<tr>
+		<td valign="top">5.</td>
+		<td valign="top">Group the XPaths with respect to EPDB Fields mentioned in IR Template Document.</td>
+		<td valign="top"><input class="checkbox" id="checkbox5" type="checkbox" name="CheckPoint"value="CheckPoint5"/></td>
+	</tr>
+	<tr>
+		<td valign="top">6.</td>
+		<td valign="top">Open latest IR Template and save as &#x201C;dbcode_spec.doc&#x201D; ---- Ex: ir00816a_spec.doc).</td>
+		<td valign="top"><input class="checkbox" id="checkbox6" type="checkbox" name="CheckPoint"value="CheckPoint6"/></td>
+	</tr>
+	<tr>
+		<td valign="top">7.</td>
+		<td valign="top">Update Dataset Name ----- {Database Name, long form} ({product code}) --- --- Capture the information from &#x201C;Questionnaire&#x201D;.</td>
+		<td valign="top"><input class="checkbox" id="checkbox7" type="checkbox" name="CheckPoint"value="CheckPoint7"/></td>
+	</tr>
+	<tr>
+		<td valign="top">8.</td>
+		<td valign="top">Update DataSource Name ----- {Institution Name}, DataSource ID: --- {product code} and DataSet Name --- {Name of IR} --- --- Capture the information from &#x201C;Questionnaire&#x201D;.</td>
+		<td valign="top"><input class="checkbox" id="checkbox8" type="checkbox" name="CheckPoint"value="CheckPoint8"/></td>
+	</tr>
+	<tr>
+		<td valign="top">9.</td>
+		<td valign="top">Update Version --- Spec {SVN path/file name}  --- Capture the SVN path where Spec is added (E.g.: http://ddd.svn.epnet.com/design/CustIR/ProductSpecific/ir00816a_PurdueePubs/ir00816a_spec.doc.)</td>
+		<td valign="top"><input class="checkbox" id="checkbox9" type="checkbox" name="CheckPoint"value="CheckPoint9"/></td>
+	</tr>
+	<tr>
+		<td valign="top">10.</td>
+		<td valign="top">Update &#x201C;Document History&#x201D; with your name, date and Dataset name of mapping task done.</td>
+		<td valign="top"><input class="checkbox" id="checkbox10" type="checkbox" name="CheckPoint"value="CheckPoint10"/></td>
+	</tr>
+	<tr>
+		<td valign="top">11.</td>
+		<td valign="top">Capture Lookups files paths if provided.</td>
+		<td valign="top"><input class="checkbox" id="checkbox11" type="checkbox" name="CheckPoint"value="CheckPoint11"/></td>
+	</tr>
+	<tr>
+		<td valign="top">12.</td>
+		<td valign="top">Update the Loader information as follows:
+		<table border="0">
+		<tr>
+		<td valign="top">a.</td>
+		<td valign="top">Mention the fields when instructions are changed from IR framework default behaviour.</td>
+		<td valign="top"><input class="checkbox" id="checkbox12a" type="checkbox" name="CheckPoint"value="CheckPoint12a"/></td>
+		</tr>
+		<tr>
+		<td valign="top">b.</td>
+		<td valign="top">Mention the fields when instructions are not changed from default behaviour.</td>
+		<td valign="top"><input class="checkbox" id="checkbox12b" type="checkbox" name="CheckPoint"value="CheckPoint12b"/></td>
+		</tr>
+		<tr>
+		<td valign="top">c.</td>
+		<td valign="top">Mention the fields which are not covered.</td>
+		<td valign="top"><input class="checkbox" id="checkbox12c" type="checkbox" name="CheckPoint"value="CheckPoint12c"/></td>
+		</tr>
+		</table>
+		</td>
+		<td valign="top"><input class="checkbox" id="checkbox12" type="checkbox" name="CheckPoint"value="CheckPoint12"/></td>
+	</tr>
+	
+	<tr>
+		<td valign="top">13.</td>
+		<td valign="top">First map the mandatory fields in Spec with relevant examples.</td>
+		<td valign="top"><input class="checkbox" id="checkbox13" type="checkbox" name="CheckPoint"value="CheckPoint13"/></td>
+	</tr>
+	<tr>
+		<td valign="top">14.</td>
+		<td valign="top">In Spec under &#x201C;IP Field ID Column&#x201D; mention only &#x201C;Hierarchy&#x201D; tags Xpaths.</td>
+		<td valign="top"><input class="checkbox" id="checkbox14" type="checkbox" name="CheckPoint"value="CheckPoint14"/></td>
+	</tr>
+	
+	<tr>
+		<td valign="top">15.</td>
+		<td valign="top">If instructions are suitable to default behaviour then the font colour of exemplar should be in red colour, otherwise black colour. </td>
+		<td valign="top"><input class="checkbox" id="checkbox15" type="checkbox" name="CheckPoint"value="CheckPoint15"/></td>
+	</tr>
+
+	<tr>
+		<td valign="top">16.</td>
+		<td valign="top">Capture Font style always as &#x201C;Arial&#x201D; and Font size should be “8” for all the columns except third column specifically for the examples use Font style as &#x201C;Courier New&#x201D; and Font Size should be &#x201C;8&#x201D;  itself i.e., after Ex:/ AN</td>
+		<td valign="top"><input class="checkbox" id="checkbox16" type="checkbox" name="CheckPoint"value="CheckPoint16"/></td>
+	</tr>
+	<tr>
+		<td valign="top">17.</td>
+		<td valign="top">Capture default ISBN (no-dash), ISSN (no-dash) whenever ISBN & ISSN are given.</td>
+		<td valign="top"><input class="checkbox" id="checkbox17" type="checkbox" name="CheckPoint"value="CheckPoint17"/></td>
+	</tr>
+	<tr>
+		<td valign="top">18.</td>
+		<td valign="top">Whenever we are capturing &#x201C;May repeat&#x201D; in nature, corresponding examples for that particular field/tag must be placed in the examples (Sometimes it’s optional).</td>
+		<td valign="top"><input class="checkbox" id="checkbox18" type="checkbox" name="CheckPoint"value="CheckPoint18"/></td>
+	</tr>
+	<tr>
+		<td valign="top">19.</td>
+		<td valign="top">Mention the instructions which are suitable for the particular field/tag based on the input received not in general.</td>
+		<td valign="top"><input class="checkbox" id="checkbox19" type="checkbox" name="CheckPoint"value="CheckPoint19"/></td>
+	</tr>
+	<tr>
+		<td valign="top">20.</td>
+		<td valign="top">Capture &#x201C;Publication Type&#x201D; by default if &#x201C;Document Type&#x201D; provided.</td>
+		<td valign="top"><input class="checkbox" id="checkbox20" type="checkbox" name="CheckPoint"value="CheckPoint20"/></td>
+	</tr>
+	<tr>
+		<td valign="top">21.</td>
+		<td valign="top">If Publication Date is provided then capture Publication Year as a default field/tag.</td>
+		<td valign="top"><input class="checkbox" id="checkbox21" type="checkbox" name="CheckPoint"value="CheckPoint21"/></td>
+	</tr>
+	<tr>
+		<td valign="top">22.</td>
+		<td valign="top">Capture &#x201C;FlagRepository_15042&#x201D; is always &#x201C;Y&#x201D;.</td>
+		<td valign="top"><input class="checkbox" id="checkbox22" type="checkbox" name="CheckPoint"value="CheckPoint22"/></td>
+	</tr>
+	<tr>
+		<td valign="top">23.</td>
+		<td valign="top">Capture &#x201C;Collection Name for Display&#x201D; by default if &#x201C;Collection Name&#x201D; is provided by using sets.xml file.</td>
+		<td valign="top"><input class="checkbox" id="checkbox23" type="checkbox" name="CheckPoint"value="CheckPoint23"/></td>
+	</tr>
+	<tr>
+		<td valign="top">24.</td>
+		<td valign="top">If Customer provides any Lookup for Collection Names or Publication Types captured accordingly.</td>
+		<td valign="top"><input class="checkbox" id="checkbox24" type="checkbox" name="CheckPoint"value="CheckPoint24"/></td>
+	</tr>
+	<tr>
+		<td valign="top">25.</td>
+		<td valign="top">Capture PubInfo_260 if only Publisher_11260 provided.</td>
+		<td valign="top"><input class="checkbox" id="checkbox25" type="checkbox" name="CheckPoint"value="CheckPoint25"/></td>
+	</tr>
+	<tr>
+		<td valign="top">26.</td>
+		<td valign="top">Capture Publisher Name and ignore pubdate in PubInfo_260.</td>
+		<td valign="top"><input class="checkbox" id="checkbox26" type="checkbox" name="CheckPoint"value="CheckPoint26"/></td>
+	</tr>
+	<tr>
+		<td valign="top">27.</td>
+		<td valign="top">Don&#x2019;t remove unmapped fields instead highlight them in GREY colour.</td>
+		<td valign="top"><input class="checkbox" id="checkbox28" type="checkbox" name="CheckPoint"value="CheckPoint28"/></td>
+	</tr>
+	<tr>
+		<td valign="top">28.</td>
+		<td valign="top">Assign Page numbers correctly in &#x201C;Table of Contents&#x201D;.</td>
+		<td valign="top"><input class="checkbox" id="checkbox29" type="checkbox" name="CheckPoint"value="CheckPoint29"/></td>
+	</tr>
+	<tr>
+		<td valign="top">29.</td>
+		<td valign="top">While working on <b>IR orange</b> user
+		stories, make sure
+to match interface(eAdmin) with spec(eAdmin) -- EX: Clusters, limiter,
+customizers etc.</td>
+		<td valign="top"><input class="checkbox" id="checkbox29" type="checkbox" name="CheckPoint"value="CheckPoint29"/></td>
+	</tr>
+	<tr>
+		<td valign="top">30.</td>
+		<td valign="top">Make sure to replace Double quotes
+		with single quotes in title, author and subject fields.</td>
+		<td valign="top"><input class="checkbox" id="checkbox29" type="checkbox" name="CheckPoint"value="CheckPoint29"/></td>
+	</tr>
+	</table>
+  <div class="print"><input width="500px" height="500px" type="submit" value="Print" onClick="window.print()"/></div>
+  <a href="javascript:location.reload(true)"><input width="500px" height="500px" type="button" value="Refresh"/></a>
+</form>
+</body>
+</html>

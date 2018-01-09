@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NISC Export Services Pvt. Ltd.</title>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$( "#checkbox1" ).one( "click", function() {
+  var index = $( "#checkbox1" ).index( this );
+  $( this ).checked;
+  });
+
+
+});
+</script>
+<style>
+body
+{
+font-size:18px;
+margin:30px 20px;
+
+}
+.h2
+{
+color:#8B0000;
+font-weight:bold;
+font-size:22px;
+text-align:left;
+}
+.checkbox
+{
+width:18px;
+height:18px;
+}
+.print
+{
+text-align:center;
+margin-top:50px;
+}
+div input
+{
+color:red;
+background:#FFDD00;
+width:80px;
+height:40px;
+font-size:20px;
+}
+</style>
+
+
+</head>
+<body>
+
+<h1 style="color:#8B0000;font-weight:bold;font-size:30px;text-align:center">DATAMAPPING QA CHECKLIST</h1>
+<h2 class="h2">SPEC QA CHECKLIST:</h2>
+<form action="####">
+<table>
+	<tr>
+		<td>Spec Done By:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>QA Done By:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>DataSet Name:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+	<tr>
+		<td>Date:</td>
+		<td><input type="textbox"/></td>
+	</tr>
+</table>
+  <table border="0">
+<tr>
+<td valign="top">1.</td>
+<td valign="top">Check the Dataset Output filename (i.e. format should be &#x201C;dbcode_spec.doc&#x201D; ex: &#x201C;edsalt_spec.doc&#x201D;)</td>
+<td valign="top"><input class="checkbox" id="checkbox1" type="checkbox" name="CheckPoint" value="CheckPoint1"/></td>
+</tr>
+<tr>
+<td valign="top">2.</td>
+<td valign="top">Check whether the latest version of data mapping template is used for data mapping or not.</td>
+<td valign="top"><input class="checkbox" id="checkbox2" type="checkbox" name="CheckPoint" value="CheckPoint2"/></td>
+</tr>
+<tr>
+<td valign="top">3.</td>
+<td valign="top">Check the header information for (Database Name, long form) ({product code}) and compare with Product Setup Sheet/Rally.</td>
+<td valign="top"><input class="checkbox" id="checkbox3" type="checkbox" name="CheckPoint" value="CheckPoint3"/></td>
+</tr>
+<tr>
+<td valign="top">4.</td>
+<td valign="top">Check the font style and font size of the Spec (Font Size should be &#x201C;8&#x201D; and capture Font Style as &#x201C;Arial&#x201D; for all the columns except third column i.e., particularly for the examples, use Font style as &#x201C;Courier New&#x201D; after Ex:/AN)</td>
+<td valign="top"><input class="checkbox" id="checkbox4" type="checkbox" name="CheckPoint" value="CheckPoint4"/></td>
+</tr>
+<tr>
+<td valign="top">5.</td>
+<td valign="top">Check if the &#x201C;Document History&#x201D; is updated correctly in Spec i.e., Person name, date of change and description of change.</td>
+<td valign="top"><input class="checkbox" id="checkbox5" type="checkbox" name="CheckPoint" value="CheckPoint5"/></td>
+</tr>
+<tr>
+<td valign="top">6.</td>
+<td valign="top">Check whether  the Xpaths provided in Field Metadata Report File are mapped correctly in Spec with EPMARC Fields.</td>
+<td valign="top"><input class="checkbox" id="checkbox7" type="checkbox" name="CheckPoint" value="CheckPoint7"/></td>
+</tr>
+<tr>
+<td valign="top">7.</td>
+<td valign="top">Check &#x201C;NotCoveredXpaths.txt&#x201D; file to confirm that these Xpaths are not a part of EPMARC XML Manual.</td>
+<td valign="top"><input class="checkbox" id="checkbox8" type="checkbox" name="CheckPoint" value="CheckPoint8"/></td>
+</tr>
+<tr>
+<td valign="top">8.</td>
+<td valign="top">Lay special emphasis on the Mandatory fields in Spec and ensure that they are mapped correctly per EPMARC XML Manual (for example Field IDs like 13, 11013, 18138, 10041, 18, 11681, etc.)</td>
+<td valign="top"><input class="checkbox" id="checkbox9" type="checkbox" name="CheckPoint" value="CheckPoint9"/></td>
+</tr>
+<tr>
+<td valign="top">9.</td>
+<td valign="top">Check for fake ISXN if no ISBN/ISSN available for the dataset.</td>
+<td valign="top"><input class="checkbox" id="checkbox10" type="checkbox" name="CheckPoint" value="CheckPoint10"/></td>
+</tr>
+<tr>
+<td valign="top">10.</td>
+<td valign="top">Check the &#x201C;INSTRUCTIONS&#x201D; written in SPEC along with the examples listed. Ensure that the instructions match with the examples provided.</td>
+<td valign="top"><input class="checkbox" id="checkbox11" type="checkbox" name="CheckPoint" value="CheckPoint11"/></td>
+</tr>
+<tr>
+<td valign="top">11.</td>
+<td valign="top">Check the &#x201C;Value Analysis Report Files&#x201D; for Data Variation pertaining to each field and ensure that the Spec covers all the instructions related to Data Variations.</td>
+<td valign="top"><input class="checkbox" id="checkbox12" type="checkbox" name="CheckPoint" value="CheckPoint12"/></td>
+</tr>
+<tr>
+<td valign="top">12.</td>
+<td valign="top">Check Product Setup Sheet for Full Text Availability, Open Access Availability and need for fake ISXN.</td>
+<td valign="top"><input class="checkbox" id="checkbox13" type="checkbox" name="CheckPoint" value="CheckPoint13"/></td>
+</tr>
+<tr>
+<td valign="top">13.</td>
+<td valign="top">Check the Table of Contents of the Spec to ensure that the page numbers are correct and all the fields are covered</td>
+<td valign="top"><input class="checkbox" id="checkbox14" type="checkbox" name="CheckPoint" value="CheckPoint14"/></td>
+</tr>
+<tr>
+<td valign="top">14.</td>
+<td valign="top">Check &#x201C;Cover Date&#x201D; when date is not in pubinfo or in ItemCitation.</td>
+<td valign="top"><input class="checkbox" id="checkbox15" type="checkbox" name="CheckPoint" value="CheckPoint15"/></td>
+</tr>
+	</table>
+  <div class="print"><input width="500px" height="500px" type="submit" value="Print" onClick="window.print()"/></div>
+  <a href="javascript:location.reload(true)"><input width="500px" height="500px" type="button" value="Refresh"/></a>
+</form>
+</body>
+</html>
